@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/shopping.css">  
+    <link rel="icon" type="image/x-icon" href="./media/logo/icon.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+    <script src="./js/shopping.js"></script>
+    
+    <title>City Trip - Shopping</title>
+</head>
+<body>
+    
+    <header>
+        <a href="welcome.html">
+            <img src="./media/logo/logo.png" alt="logo" id="logo">
+        </a>
+        <div class="navbar">
+            <ul>
+                <li><a href="welcome.html">Welcome</a></li>
+                <li><a href="canadianCityTour.html">Canadian CityTour</a></li>
+                <li><a href="internationalCityTour.html">International CityTour</a></li>
+                <li><a href="shopping.html">Shopping</a></li>
+                <li><a href="invoice.html">Invoice</a></li>
+                <li><a href="home.html">Logout</a></li>
+            </ul>
+        </div> 
+    </header>
+    
+    
+
+    <section>
+       
+        <div id="banner">
+            <h1 class="title">Shopping</h1>
+          
+            <form class="addToChart">
+                <input type="submit" id="addToChart" value="Add to Cart">
+                <label>Total Price: <h1 id="total"></h1></label>
+            </form>
+            
+        </div>
+
+        <div class="container">
+            <form id= "main" action="./invoice.html" method="get">
+                <ul>
+                    <li>
+                        <div>
+                            <img src="./media/gallery/newYork.jpg" alt="newYork" class="gallery-image"></a>
+                        </div>
+                        <div class="description">
+                            <h1>New York</h1>
+                            <p>Two Day Guided Sightseeing Tour with hotel Included</p>
+                            <h3>$<span class="price">899</span></h3>
+                            <input type="checkbox" class="checkbox">
+                            <label>Quantity:   </label>
+                            <input type="number" class="quantity">
+                         
+                            
+                        </div>
+                      
+                       
+                    </li>
+                        
+            
+                    <li>
+                        <div>
+                            <img src="./media/gallery/Paris.jpg" alt="Paris" class="gallery-image"></a>
+                        </div>
+                        <div class="description">
+                            <h1>Paris</h1>
+                            <p>Skip the Line Ticket Eiffel Tower Summit</p>
+                            <h3>$<span class="price">240</span></h3>
+                            <input type="checkbox" class="checkbox">
+                            <label>Quantity:
+                            </label>
+                            <input type="number" class="quantity">
+                        </div>
+                    </li>
+                        
+                    <li>
+                        <div>
+                            <img src="./media/gallery/Tokyo.jpg" alt="Tokyo" class="gallery-image"></a>
+    
+                        </div>  
+                        <div class="description">
+                            <h1>Tokyo</h1>
+                            <p>Private Full Day Sightseeing Tour to Mount Fuji and Hakone</p>
+                            <h3>$<span class="price">460</span></h3>
+                            <input type="checkbox" class="checkbox">
+                            <label>Quantity:
+                            </label>
+                            <input type="number" class="quantity">
+    
+                        </div>  
+                       
+                        
+                    </li>
+                    <li>
+                        <div>
+                          <img src="./media/gallery/Toronto.jpg" id = "Toronto"alt="Toronto" class="gallery-image">
+                        </div> 
+                        <div class="description">
+                            <h1>Toronto</h1>
+                            <p>Niagara Falls Day Tour from Toronto</p>
+                            <h3>$<span class="price">89</span></h3>
+                            <input type="checkbox" class="checkbox">
+                            <label>Quantity:
+                            </label>
+                            <input type="number" class="quantity">
+                           
+                        </div>
+                      
+                       
+                    </li>
+                        
+            
+                    <li>
+                        <div>
+                           <img src="./media/gallery/Vancouver.jpg" id = "Vancouver" alt="Vancouver" class="gallery-image">
+                        </div> 
+                        <div class="description">
+                            <h1>Vancouver</h1>
+                            <p>Vancouver Seaplane Tour for 2 persons</p>
+                            <h3>$<span class="price">349</span></h3>
+                            <input type="checkbox" class="checkbox">
+                            <label>Quantity:
+                            </label>
+                            <input type="number" class="quantity">
+                            
+                    </li>
+                        
+                    <li>    
+                        <div>
+                           <img src="./media/gallery/Montreal.jpg" id="Montreal" alt="Montreal" class="gallery-image">
+                        </div> 
+                        <div class="description">
+                            <h1>Montreal</h1>
+                            <p>Montreal History Guided Sightseeing Cruise</p>
+                            <h3>$<span class="price">59</span></h3>
+    
+                            <input type="checkbox" class="checkbox">
+                            <label>Quantity:
+                            </label>
+                            <input type="number" class="quantity">
+                          
+                        </div>
+                    </li>
+                </ul>
+                <input type="submit" id="submit" value="Go to Invoice">
+            </form>
+            
+            
+        </div>
+    </section>
+        
+  
+
+    <footer>
+        <i><a href="https://www.google.com/account/about/"><img src="./media/socialMedia/googlePlus.jpg" alt="google" class="icon"></a></i>
+        <i><a href="https://www.facebook.com/"><img src="./media/socialMedia/facebook.png" alt="facebook" class="icon"></a></i>
+        <i><a href="https://www.instagram.com/"><img src="./media/socialMedia/instagram.png" alt="instagram" class="icon"></a></i>
+        <i><a href="https://www.skype.com/"><img src="./media/socialMedia/skype.png" alt="skype" class="icon"></a></i>
+        <p>Copyright &copy; Yinglin Lu 2022 All Rights Reserved</p>
+    </footer>
+       
+</body>
+</html>

@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+}
+header{
+    background-color: #063970;
+    padding: 40px;
+    min-height: 100px;
+}
+#logo{
+   margin:0 20px 0 20px;
+   width: 300px;
+   height:100px;
+}
+.navbar{
+    float:right;
+}
+.navbar ul{
+    list-style: none;
+    margin:45px 0px 0 0;
+    text-decoration: none;
+}
+.navbar li {
+    display: inline-block;
+    font-size:23px;   
+    padding-left: 10px;
+}
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.navbar li a:hover{
+    background-color: gray;
+    border-radius: 15px;
+    
+}
+
+
+section{
+    background-image: url(../media/background/background3.jpg);
+    background-size: 100% 100%;
+    width:100%;
+    min-height:600px;
+    text-align: center;
+    padding:30px 0;
+    box-sizing: border-box;
+ }
+#banner{
+    width:80%;
+    margin:auto;
+    text-align: center;
+}
+.title
+{
+    font-size:100px;
+    color:white;
+    margin-bottom: 40px;
+}
+
+.searchBar input{
+    width: 50%;
+    margin: 10px auto;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 60px;
+    
+}
+#submit{
+   
+    text-align: center ;
+    font-size: 40px;
+    background-color:aqua;
+    color:black;
+
+}
+.container{
+    width:80%;
+    margin:10px auto;
+    padding:50px 0px;
+    box-sizing: border-box ;
+    color:white;
+    font-size: 40px;
+
+}
+.container ul{
+    display: grid;
+    grid-row-gap: 30px;
+    grid-column-gap:30px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 30px 0;
+  
+    list-style: none;
+    color: white    ;
+    font-weight: bold;
+
+}
+
+
+
+
+ footer{
+    background-color: #063970;
+    min-height: 100px;  
+    text-align: center;
+ }
+footer .icon{
+    width: 50px;
+    height: 50px;
+    margin:30px 60px;
+    display: inline-block;
+    border-radius: 10px;
+ }
+ footer p{
+    font-size:20px;
+    padding-bottom: 10px;
+    color:white;
+ }
+
+#searchResult{
+    text-align: left;
+    font-size: 40px;
+    color:whitesmoke;
+    width:80%;
+    margin:0 auto;
+    margin-top: 100px;
+    display: none;
+
+
+}
+#searchResult h2{
+    display: none;
+}

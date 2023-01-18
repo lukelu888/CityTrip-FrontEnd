@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/invoice.css">
+    <link rel="icon" type="image/x-icon" href="./media/logo/icon.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+    <script src="./js/invoice.js"></script>
+    <title>City Trip - Invoice</title>
+</head>
+<body>
+    
+    <header>
+        <a href="welcome.html">
+            <img src="./media/logo/logo.png" alt="logo" id="logo">
+        </a>
+        <div class="navbar">
+            <ul>
+                <li><a href="welcome.html">Welcome</a></li>
+                <li><a href="canadianCityTour.html">Canadian CityTour</a></li>
+                <li><a href="internationalCityTour.html">International CityTour</a></li>
+                <li><a href="shopping.html">Shopping</a></li>
+                <li><a href="invoice.html">Invoice</a></li>
+                <li><a href="home.html">Logout</a></li>
+            </ul>
+        </div> 
+    </header>
+    
+
+    <section>
+        <div class="container">
+            <h1>Invoice</h1>
+            <div id="invoice">
+                <ul id="invoice-header">
+                    <li class="productName">Product Name</li>
+                    <li>Quantity</li>
+                    <li>Price</li>
+                    
+                </ul>
+                
+                <ul class="invoice-content">
+                    <li class="productName"><span id="productName"></span></li>
+                    <li><span id="quantity"></span></li>
+                    <li><span id="price"></span></li>
+                    <li>
+                       
+                    </li>
+                </ul>
+                <ul id="invoice-total">
+                    <li></li>
+                    <li></li>
+    
+                    <li>
+                        <ul id = "summary">
+                            <li>Subtotal: <span id="subtotal"></span></li>
+                            <li>QST(9.975%): <span id="QST"></span></li>
+                            <li>GST(5%): <span id="GST"></span></li>
+                            <li class="total">Total : <span id="total"></span></li>
+                        </ul>
+                       
+                    
+                    
+                    </li>
+                    
+                </ul>
+            </div>
+
+
+            <h1>Finalise Payment</h1>
+            <div id = "payment">
+          
+                <form id="cardInfo" name="card">
+                    <h2>Credit Card Info</h2>
+                    <label for="cardNumber">*Card Number</label>
+                    <br>
+                    <input type="text" name="cardNumber">
+                    <p>Enter 15 or 16 digit number</p>
+                    <br>
+                    <label for="CVC">*CVC Number</label>
+                    <br>
+                    <input type="number" name="CVC">
+                    <p>3 or 4 digit only</p>
+                    <br>
+                    <label for="nameOnCard">*Name on the Card</label>
+                    <br>
+                    <input type="text" name="nameOnCard">
+                    <p>Can use char or space, first letter can only be char</p>
+                    <br>
+                    <label for="expireDate">*Expiration Date</label>
+                    <br>
+                    <input type="text" placeholder="MM/YY" name="expirationDate">
+                    <p>Expiry Date must be Greater Than Or Equal to Today's Date, format is MM/YY</p>
+                    <br>
+                    <input type="reset" class="btn" name="reset" value="Clear">
+                    <br>
+                    <label for="totalPurchase">Total Purchase</label>
+                    <br>
+                    <p id="totalPurchase"></p>
+                    <br>
+                    <h3>Show terms and Conditions</h3>
+                    <input type="checkbox" name="checkbox" id="checkbox"> 
+                    <label id="agree">*Agree terms and Conditions</label> 
+                
+                </form>
+                
+
+                <form id="shippingInfo">
+                    <h2>Shipping Address</h2>
+                    <label for="name">*Name</label>
+                    <br>
+                    <input type="text" name="name">
+                    <p>can use char or space</p>
+                    <br>
+                    <label for="address">*Address</label>
+                    <br>
+                    <input type="text" name="address">
+                    <p>can use char, space, - or , </p>
+                    <br>
+                    <label for="address2">Address Line 2</label>
+                    <br>
+                    <input type="text" name="address2">
+                    <br>
+                    <label for="city">*City</label>
+                    <br>
+                    <input type="text" name="city">
+                    <p>can only use char or space</p>
+                    <br>
+                    <label for="postalCode">*Postal Code</label>
+                    <br>
+                    <input type="text" name="postalCode">
+                    <p>A1A 1A1</p>
+                    <br>
+                    <label for="province">*Province</label>
+                    <br>
+                    <input type="text" name="province">
+                    <p>only char or space</p>
+                    <br>
+                    <label for="country">*Country</label>
+                    <br>
+                    <input type="text" name="country">
+                    <p>can only use char or space</p>
+                    <input type="reset" class="btn" name="checkbox" value="Clear">
+                </form>
+
+            </div>
+            <input type="submit" name="submit" value="Place Order" id="placeOrder">
+
+           
+        </div>
+    </section>
+        
+  
+
+    <footer>
+        <i><a href="https://www.google.com/account/about/"><img src="./media/socialMedia/googlePlus.jpg" alt="google" class="icon"></a></i>
+        <i><a href="https://www.facebook.com/"><img src="./media/socialMedia/facebook.png" alt="facebook" class="icon"></a></i>
+        <i><a href="https://www.instagram.com/"><img src="./media/socialMedia/instagram.png" alt="instagram" class="icon"></a></i>
+        <i><a href="https://www.skype.com/"><img src="./media/socialMedia/skype.png" alt="skype" class="icon"></a></i>
+        <p>Copyright &copy; Yinglin Lu 2022 All Rights Reserved</p>
+    </footer>
+       
+</body>
+</html>
